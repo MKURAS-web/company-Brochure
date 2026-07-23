@@ -493,9 +493,10 @@ padding-bottom: 40px;
     flex-direction: column;
     gap: 6px;
     align-items: flex-start;
-    border-radius: 5px;
-    height: auto;
+    border-radius: 1px;
+    /* height: auto; */
     padding: 10px 14px;
+    height: 100px;
 
   }
 
