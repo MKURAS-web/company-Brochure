@@ -1,7 +1,13 @@
 import './App.css'
+import { useState, useEffect } from 'react'
 import Logo from './assets/logo1.png'
 import FooterLogo from './assets/logo.png'
 import BackgroundImage from './assets/image.png'
+import Slide1 from './assets/image1.png'
+import Slide2 from './assets/image2.png'
+import Slide3 from './assets/image3.png'
+import Slide4 from './assets/image4.png'
+import Slide5 from './assets/image5.png'
 
 const highlights = [
   {
@@ -54,7 +60,19 @@ const values = [
   'Technology-led innovation and continuous improvement',
 ]
 
+const slideshowImages = [Slide1, Slide2, Slide3, Slide4, Slide5]
+
 function App() {
+  const [activeSlide, setActiveSlide] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % slideshowImages.length)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <div className="page-shell">
       <header className="topbar">
@@ -109,6 +127,41 @@ function App() {
               <span className='span'>Try first, then improve gradually</span>
               <span className='span'>Reliable energy infrastructure</span>
               <span className='span'>Green and sustainable growth</span>
+            </div>
+          </section>
+
+          <section className="slideshow-section">
+            <div className="section-heading">
+              <p className="eyebrow">Our gallery</p>
+              <h2>Featured images from our work</h2>
+            </div>
+            <div className="slideshow">
+              <button
+                type="button"
+                className="slide-button prev"
+                onClick={() => setActiveSlide((prev) => (prev + slideshowImages.length - 1) % slideshowImages.length)}
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+
+              <div className="slideshow-frame">
+                <img
+                  src={slideshowImages[activeSlide]}
+                  alt={`Slideshow image ${activeSlide + 1}`}
+                  className="slideshow-image"
+                />
+                <span className="slide-label">Image {activeSlide + 1} of {slideshowImages.length}</span>
+              </div>
+
+              <button
+                type="button"
+                className="slide-button next"
+                onClick={() => setActiveSlide((prev) => (prev + 1) % slideshowImages.length)}
+                aria-label="Next image"
+              >
+                ›
+              </button>
             </div>
           </section>
         <div className="section-background" style={{ backgroundImage: `url(${BackgroundImage})` }}>
