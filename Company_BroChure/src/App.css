@@ -78,16 +78,17 @@
   align-items: stretch;
   background-color: rgba(15, 79, 156, 0.55);
   border-radius: 30px;
-  padding: 36px 50px;
+  padding: 36px 80px 36px 50px;
   color: #f7fbff;
   box-shadow: 0 20px 48px rgba(2, 30, 54, 0.16);
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-size: 1rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-right: 20px;
 }
 
 .eyebrow { 
