@@ -273,7 +273,7 @@
   position: relative;
   z-index: 1;
   max-width: 1180px;
-  margin: 0 0 0 24px;
+  margin: 0;
   padding: 0 24px 0 0;
 }
 
@@ -296,7 +296,7 @@
 }
 
 .section-background .content-section {
-  margin-left: 180px;
+  margin-left: 24px;
 }
 
 .section-background::before {
@@ -315,6 +315,10 @@
 
 .section-background .section-heading {
   margin-bottom: 30px;
+}
+
+#about .section-heading {
+  margin-left: 80px;
 }
 
 .section-background .section-heading h2 {
@@ -344,16 +348,21 @@
 .feature-grid,
 .project-grid {
   display: grid;
-  gap: 100px;
+  gap: 40px;
+  justify-items: start;
 }
 
 .about-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+  max-width: 960px;
+  margin: 0 24px 0 auto;
 }
 
 .feature-grid,
 .project-grid {
-  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  max-width: 1040px;
+  margin: 0 24px 0 0;
 }
 
 .card,
