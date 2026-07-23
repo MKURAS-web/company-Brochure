@@ -581,6 +581,7 @@ padding-bottom: 40px;
   .logo img {
     width: 90px;
     height: 90px;
+    filter: brightness(0) invert(1);
   }
 
   .hero {
