@@ -505,22 +505,6 @@ padding-bottom: 40px;
     align-self: center;
   }
 
-  .brand-name {
-    color: #0b2e4a;
-  }
-
-  .brand-tag {
-    color: #5b6c82;
-  }
-
-  .nav-links {
-    border-top: 1px solid rgba(11, 46, 74, 0.12);
-  }
-
-  .nav-links a {
-    color: #0b2e4a;
-  }
-
   .logo img {
     width: 80px;
     height: 80px;
@@ -535,12 +519,12 @@ padding-bottom: 40px;
 
   .brand-name {
     font-size: 1.05rem;
-    color: #ffffff;
+    color: #0b2e4a;
   }
 
   .brand-tag {
     font-size: 0.85rem;
-    color: #dbe5f1;
+    color: #5b6c82;
   }
 
   .nav-links {
@@ -548,12 +532,12 @@ padding-bottom: 40px;
     justify-content: flex-start;
     gap: 10px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-top: 1px solid rgba(11, 46, 74, 0.12);
     width: 100%;
   }
 
   .nav-links a {
-    color: #ffffff;
+    color: #0b2e4a;
     font-size: 0.95rem;
   }
 
@@ -624,8 +608,11 @@ padding-bottom: 40px;
   }
 
   .topbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
     padding: 10px 12px;
-    align-items: flex-start;
     background: #ffffff;
     border-color: transparent;
   }
@@ -640,21 +627,25 @@ padding-bottom: 40px;
     font-size: 1rem;
     color: #0b2e4a;
   }
-  }
 
   .brand-tag {
     font-size: 0.8rem;
-    color: #dbe5f1;
+    color: #5b6c82;
   }
 
   .nav-links {
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
     padding-top: 8px;
-    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-top: 1px solid rgba(11, 46, 74, 0.12);
+    width: 100%;
   }
 
   .nav-links a {
-    color: #ffffff;
+    color: #0b2e4a;
+    font-size: 0.9rem;
   }
 
   .hero {
