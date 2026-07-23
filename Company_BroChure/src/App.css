@@ -491,23 +491,24 @@ padding-bottom: 40px;
 
   .topbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
     align-items: flex-start;
-    border-radius: 24px;
+    border-radius: 5px;
     height: auto;
-    padding: 14px 18px;
+    padding: 10px 14px;
+
   }
 
   .logo img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     filter: none;
   }
 
   .nav-links {
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 10px;
   }
 
   .hero,
