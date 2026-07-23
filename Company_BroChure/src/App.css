@@ -88,7 +88,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .eyebrow { 
@@ -184,9 +184,10 @@
 }
 
 .slideshow-section {
-  margin: 42px 0 0 180px;
-  max-width: 900px;
+  margin: 42px 0 0 24px;
+  max-width: 760px;
   padding: 0 24px;
+  padding-bottom: 30px;
 }
 
 .slideshow {
