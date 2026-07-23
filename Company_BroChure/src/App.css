@@ -490,18 +490,19 @@ padding-bottom: 40px;
   }
 
   .topbar {
-    flex-direction: column;
-    gap: 6px;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
     border-radius: 12px;
     padding: 10px 14px;
     height: auto;
-    background: rgba(11, 46, 74, 0.96);
+    background: #ffffff;
     border-color: transparent;
   }
 
   .logo {
-    align-self: flex-start;
+    align-self: center;
   }
 
   .logo img {
@@ -511,7 +512,9 @@ padding-bottom: 40px;
   }
 
   .barcontent {
-    width: 100%;
+    width: auto;
+    flex: 1;
+    min-width: 0;
   }
 
   .brand-name {
