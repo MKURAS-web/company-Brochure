@@ -505,6 +505,22 @@ padding-bottom: 40px;
     align-self: center;
   }
 
+  .brand-name {
+    color: #0b2e4a;
+  }
+
+  .brand-tag {
+    color: #5b6c82;
+  }
+
+  .nav-links {
+    border-top: 1px solid rgba(11, 46, 74, 0.12);
+  }
+
+  .nav-links a {
+    color: #0b2e4a;
+  }
+
   .logo img {
     width: 80px;
     height: 80px;
@@ -610,7 +626,7 @@ padding-bottom: 40px;
   .topbar {
     padding: 10px 12px;
     align-items: flex-start;
-    background: rgba(11, 46, 74, 0.96);
+    background: #ffffff;
     border-color: transparent;
   }
 
@@ -622,7 +638,8 @@ padding-bottom: 40px;
 
   .brand-name {
     font-size: 1rem;
-    color: #ffffff;
+    color: #0b2e4a;
+  }
   }
 
   .brand-tag {
